@@ -1,0 +1,24 @@
+<div class="container mt-4">
+    <h2>Listado de puestos</h2>
+    <button type="submit" class="btn btn-primary" routerLink="nuevoPuestoTrabajo">
+      Agregar puesto trabajo
+    </button>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Empresa</th>
+          <th scope="col">Puesto</th>
+          <th scope="col">Disponible</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let puestoTrabajo of puestoTrabajo">
+          <td>{{ puestoTrabajo.empresa }}</td>
+          <td>{{ puestoTrabajo.puesto }}</td>
+          <td>{{ puestoTrabajo.disponible }}</td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

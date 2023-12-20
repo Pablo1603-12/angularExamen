@@ -1,0 +1,30 @@
+<div class="container mt-4">
+  <h2>Listado de Candidatos</h2>
+  <button type="submit" class="btn btn-primary" routerLink="nuevoCandidato">
+    Agregar Candidato
+  </button>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">DNI</th>
+        <th scope="col">Dirección</th>
+        <th scope="col">Teléfono</th>
+        <th scope="col">Email</th>
+        <th scope="col">Fecha de Nacimiento</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let candidato of candidatos">
+        <td>{{ candidato.nombre }}</td>
+        <td>{{ candidato.apellidos }}</td>
+        <td>{{ candidato.dni }}</td>
+        <td>{{ candidato.direccion }}</td>
+        <td>{{ candidato.telefono }}</td>
+        <td>{{ candidato.mail }}</td>
+        <td>{{ candidato.fechaNacimiento }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

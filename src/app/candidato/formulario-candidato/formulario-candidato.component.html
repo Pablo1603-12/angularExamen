@@ -1,0 +1,43 @@
+<div class="container-sm mt-4">
+  <h2>Crear Candidato</h2>
+  <form (ngSubmit)="guardarCambios()">
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" id="nombre" class="form-control" [(ngModel)]="candidato.nombre" name="nombre" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="apellidos" class="form-label">Apellidos:</label>
+      <input type="text" id="apellidos" class="form-control" [(ngModel)]="candidato.apellidos" name="apellidos" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="dni" class="form-label">DNI:</label>
+      <input type="text" id="dni" class="form-control" [(ngModel)]="candidato.dni" name="dni" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="direccion" class="form-label">Dirección:</label>
+      <input type="text" id="direccion" class="form-control" [(ngModel)]="candidato.direccion" name="direccion" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="telefono" class="form-label">Teléfono:</label>
+      <input type="text" id="telefono" class="form-control" [(ngModel)]="candidato.telefono" name="telefono" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="mail" class="form-label">Email:</label>
+      <input type="email" id="mail" class="form-control" [(ngModel)]="candidato.mail" name="mail" required />
+    </div>
+
+    <div class="mb-3">
+      <label for="fechaNacimiento" class="form-label">Fecha de Nacimiento:</label>
+      <input type="date" id="fechaNacimiento" class="form-control" [(ngModel)]="candidato.fechaNacimiento" name="fechaNacimiento" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">
+      Guardar Candidato
+    </button>
+  </form>
+</div>

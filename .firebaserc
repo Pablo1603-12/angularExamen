@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "candidato-ed8ac": {
+      "hosting": {
+        "entrevistaCandidato": [
+          "candidato-ed8ac"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "candidato-ed8ac"
+  }
+}

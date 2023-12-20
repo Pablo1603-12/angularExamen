@@ -1,0 +1,26 @@
+<div class="container-sm mt-4">
+  <h2>Crear Puesto Trabajo</h2>
+  <form (ngSubmit)="guardarCambios()">
+
+
+    <div class="mb-3">
+      <label for="empresa" class="form-label">Empresa:</label>
+      <input type="text" id="empresa" class="form-control" [(ngModel)]="puestoTrabajo.empresa" name="empresa"
+        required />
+    </div>
+
+    <div class="mb-3">
+      <label for="puesto" class="form-label">Puesto:</label>
+      <input type="text" id="puesto" class="form-control" [(ngModel)]="puestoTrabajo.puesto" name="puesto" required />
+    </div>
+    <div class="mb-3">
+      <label for="disponible" class="form-label">Disponible:</label>
+      
+      <input type="checkbox" id="disponible" class="form-check-input" [(ngModel)]="puestoTrabajo.disponible"
+        name="disponible" />
+    </div>
+    <button type="submit" class="btn btn-primary">
+      Guardar
+    </button>
+  </form>
+</div>
