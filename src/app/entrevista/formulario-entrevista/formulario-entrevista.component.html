@@ -18,7 +18,7 @@
     <div class="mb-3">
       <label for="puesto" class="form-label">Puesto de Trabajo:</label>
       <select id="puesto" class="form-control" [(ngModel)]="entrevista.puesto" name="puesto" required>
-        <option *ngFor="let puesto of puesto" [value]="puesto.id">{{ puesto.puesto }}</option>
+        <option *ngFor="let puesto of puestosTrabajo" [value]="puesto.id">{{ puesto.puesto }}</option>
       </select>
     </div>
 
