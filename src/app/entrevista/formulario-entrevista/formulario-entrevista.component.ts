@@ -10,14 +10,15 @@ import { EntrevistasService } from 'src/app/servicios/entrevistas/entrevistas.se
   styleUrls: ['./formulario-entrevista.component.css']
 })
 export class FormularioEntrevistaComponent {
-[x: string]: any;
+
   
   entrevista: entrevista = {
     fecha: '',
-    candidato: [],
-    puesto: [],
+    
     realizada: undefined
   };
+candidatos: any;
+puesto: any;
 
   constructor(private route: ActivatedRoute, private entrevistaService: EntrevistasService) { }
 
